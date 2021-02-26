@@ -1,4 +1,5 @@
 header {
+    z-index: 1;
     position: absolute;
     width: 100%;
     height: 60px;
@@ -28,7 +29,7 @@ header {
         .menu {
             margin-right: 20px;
 
-            button {
+            a.icone {
                 font-size: 16px;
                 background-color: transparent;
                 filter: invert(1);

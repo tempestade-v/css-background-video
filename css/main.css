@@ -13,9 +13,10 @@ html {
 }
 
 body {
+  color: white;
   width: 100%;
   height: 100%;
-  font-family: "Taviraj", sans-serif;
+  font-family: 'Taviraj', sans-serif;
   font-size: 16px;
 }
 
@@ -30,6 +31,7 @@ body a {
 }
 
 header {
+  z-index: 1;
   position: absolute;
   width: 100%;
   height: 60px;
@@ -74,10 +76,65 @@ header .header-container .menu {
   margin-right: 20px;
 }
 
-header .header-container .menu button {
+header .header-container .menu a.icone {
   font-size: 16px;
   background-color: transparent;
   -webkit-filter: invert(1);
           filter: invert(1);
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner video {
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner .title {
+  position: absolute;
+  text-align: center;
+}
+
+.banner .title h1 {
+  font-size: 70px;
+  font-weight: normal;
+}
+
+.banner .title p {
+  width: 90vw;
+  color: #c7c7c7;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.banner .title p span {
+  color: white;
+}
+
+.banner .title button {
+  cursor: pointer;
+  color: white;
+  font-family: 'Taviraj',sans-serif;
+  font-size: 16px;
+  background-color: #27a0cf;
+  margin-top: 40px;
+  padding: 8px 20px;
+  border-radius: 4px;
 }
 /*# sourceMappingURL=main.css.map */
