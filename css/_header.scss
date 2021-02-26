@@ -1,0 +1,38 @@
+header {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: flex-end;
+
+    .header-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            margin-left: 20px;
+
+            h1{
+                color: white;
+                font-size: 20px;
+                display: inline;
+                font-weight: normal;
+            }
+            span{
+                color: rgb(180, 180, 180);
+                font-size: 12px;
+            }
+        }
+        .menu {
+            margin-right: 20px;
+
+            button {
+                font-size: 16px;
+                background-color: transparent;
+                filter: invert(1);
+            }
+        }
+    }
+}
