@@ -35,13 +35,16 @@
         </div>
     </header>
     <div class="side-menu">
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
+        <li onclick="controlMenu('close')">
+            <i class="fas fa-times"></i>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Generic</a></li>
+        <li><a href="#">Elements</a></li>
     </div>
     <main>
         <div class="banner">
-            <video autoplay muted loop>
+            <video autoplay muted loop poster="./assets/banner.jpg">
                 <source src="./assets/banner.mp4" type="video/mp4">
             </video>
             <div class="title">
@@ -54,10 +57,10 @@
 
         </div>
     </main>
-    
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
-    <script src="./js/main.js" />
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

@@ -89,9 +89,56 @@ header .header-container .menu a.icone {
   height: 100%;
   position: absolute;
   right: -300px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   background-color: black;
-  -webkit-transition: 1s ease-out;
-  transition: 1s ease-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.side-menu li {
+  width: 80%;
+  list-style: none;
+  text-align: left;
+  font-size: 16px;
+  padding: 15px 0;
+  border-bottom: 1px solid #474747;
+}
+
+.side-menu li a {
+  color: white;
+}
+
+.side-menu li a:hover {
+  color: #0077ff;
+}
+
+.side-menu li:nth-child(1) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.side-menu li:nth-child(1):hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .banner {
