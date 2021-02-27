@@ -9,7 +9,7 @@ function controlMenu(param) {
     }
 }
 
-function resizeMenuHeader() {
+function resizeSideMenu() {
     let sideMenu = document.querySelector('.side-menu')
     let bodyHeight = document.body.clientHeight
 
@@ -17,8 +17,8 @@ function resizeMenuHeader() {
 }
 
 
-window.addEventListener("resize", resizeMenuHeader)
-window.addEventListener("load", resizeMenuHeader)
+window.addEventListener("resize", resizeSideMenu)
+window.addEventListener("load", resizeSideMenu)
 
 /* fixed header */
 function fixedHeader() {
